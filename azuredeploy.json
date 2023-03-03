@@ -628,34 +628,34 @@
         "hostNameType": "Verified"
       }
     },
-    {
-          "type": "Microsoft.EventGrid/topics/eventSubscriptions",
-          "apiVersion": "2022-06-15",
-          "name": "[concat(parameters('topics_customertopicsandeep_name'), '/customer-snapshot-sandeep')]",
-          "dependsOn": [
-              "[resourceId('Microsoft.EventGrid/topics', parameters('topics_customertopicsandeep_name'))]",
-              "[resourceId('Microsoft.Web/sites/functions', parameters('sites_test_functionappsandeep_name'), 'CopyBlobFile')]"
-          ],
+   {
+      "type": "Microsoft.EventGrid/topics/eventSubscriptions",
+      "apiVersion": "2022-06-15",
+      "name": "[concat(parameters('topics_customertopic_name'), '/customer-function-copyblob')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.EventGrid/topics', parameters('topics_customertopic_name'))]",
+        "[resourceId('Microsoft.Web/sites/functions', parameters('sites_funapp_test_name'), 'CopyBlobFile')]"
+      ],
+      "properties": {
+        "destination": {
           "properties": {
-              "destination": {
-                  "properties": {
-                      "resourceId": "[resourceId('Microsoft.Web/sites/functions', parameters('sites_test_functionappsandeep_name'), 'CopyBlobFile')]",
-                      "maxEventsPerBatch": 1,
-                      "preferredBatchSizeInKilobytes": 64
-                  },
-                  "endpointType": "AzureFunction"
-              },
-              "filter": {
-                  "enableAdvancedFilteringOnArrays": true
-              },
-              "labels": [],
-              "eventDeliverySchema": "EventGridSchema",
-              "retryPolicy": {
-                  "maxDeliveryAttempts": 30,
-                  "eventTimeToLiveInMinutes": 1440
-              }
-          }
+            "resourceId": "[resourceId('Microsoft.Web/sites/functions', parameters('sites_funapp_test_name'), 'CopyBlobFile')]",
+            "maxEventsPerBatch": 1,
+            "preferredBatchSizeInKilobytes": 64
+          },
+          "endpointType": "AzureFunction"
+        },
+        "filter": {
+          "enableAdvancedFilteringOnArrays": true
+        },
+        "labels": [],
+        "eventDeliverySchema": "EventGridSchema",
+        "retryPolicy": {
+          "maxDeliveryAttempts": 30,
+          "eventTimeToLiveInMinutes": 1440
+        }
       }
+    }
   ],
   "outputs": {}
 }
