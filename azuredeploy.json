@@ -633,8 +633,9 @@
       "apiVersion": "2022-06-15",
       "name": "[concat(parameters('topics_customertopic_name'), '/customer-function-copyblob')]",
       "dependsOn": [
-        "[resourceId('Microsoft.EventGrid/topics', parameters('topics_customertopic_name'))]",
-        "[resourceId('Microsoft.Web/sites/functions', parameters('sites_funapp_test_name'), 'CopyBlobFile')]"
+         "[resourceId('Microsoft.EventGrid/topics', parameters('topics_customertopic_name'))]",
+         "[resourceId('Microsoft.Web/sites/functions', parameters('sites_funapp_test_name'), 'CopyBlobFile')]",
+         "[resourceId('Microsoft.Web/sites/extensions', parameters('sites_funapp_test_name'),'ZipDeploy')]"
       ],
       "properties": {
         "destination": {
