@@ -6,10 +6,6 @@
       "defaultValue": "customertopic",
       "type": "String"
     },
-    "components_funapp_test_name": {
-      "defaultValue": "test-functionapp",
-      "type": "String"
-    },
     "storageAccounts_storageaccfun_name": {
       "defaultValue": "storageaccfun",
       "type": "String"
@@ -48,7 +44,7 @@
     {
       "type": "microsoft.insights/components",
       "apiVersion": "2020-02-02",
-      "name": "[parameters('components_funapp_test_name')]",
+      "name": "[parameters('sites_funapp_test_name')]",
       "location": "eastus",
       "kind": "web",
       "properties": {
