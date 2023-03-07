@@ -255,11 +255,11 @@
         "family": "S",
         "capacity": 1
       },
-      "kind": "elastic",
+      "kind": "app",
       "properties": {
         "perSiteScaling": false,
-        "elasticScaleEnabled": true,
-        "maximumElasticWorkerCount": 2,
+        "elasticScaleEnabled": false,
+        "maximumElasticWorkerCount": 1,
         "isSpot": false,
         "reserved": false,
         "isXenon": false,
