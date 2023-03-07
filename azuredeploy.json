@@ -249,10 +249,10 @@
       "name": "[parameters('serverfarms_funappplan_name')]",
       "location": "East US",
       "sku": {
-        "name": "EP1",
-        "tier": "ElasticPremium",
-        "size": "EP1",
-        "family": "EP",
+        "name": "S1",
+        "tier": "Standard",
+        "size": "S1",
+        "family": "S",
         "capacity": 1
       },
       "kind": "elastic",
