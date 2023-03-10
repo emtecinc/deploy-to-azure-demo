@@ -17,7 +17,7 @@
     "sites_funapp_test_name": {
       "defaultValue": "test-functionapp",
       "type": "String"
-    }
+    },
     "storageAccounts_storageaccfun_name": {
       "defaultValue": "storageaccfun",
       "type": "String"
@@ -25,7 +25,7 @@
     "storageAccounts_storageacc_name": {
       "defaultValue": "storageacc",
       "type": "String"
-    },
+    }
   },
   "variables": {},
   "functions": [],
