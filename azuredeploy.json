@@ -6,10 +6,6 @@
       "defaultValue": "customertopic",
       "type": "String"
     },
-    "storageAccounts_storageaccfun_name": {
-      "defaultValue": "storageaccfun",
-      "type": "String"
-    },
     "serverfarms_funappplan_name": {
       "defaultValue": "funappplan",
       "type": "String"
@@ -18,14 +14,18 @@
       "defaultValue": "vnet-test",
       "type": "String"
     },
-    "storageAccounts_storageacc_name": {
-      "defaultValue": "storageacc",
-      "type": "String"
-    },
     "sites_funapp_test_name": {
       "defaultValue": "test-functionapp",
       "type": "String"
     }
+    "storageAccounts_storageaccfun_name": {
+      "defaultValue": "storageaccfun",
+      "type": "String"
+    },
+    "storageAccounts_storageacc_name": {
+      "defaultValue": "storageacc",
+      "type": "String"
+    },
   },
   "variables": {},
   "functions": [],
