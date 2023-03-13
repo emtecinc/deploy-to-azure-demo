@@ -21,7 +21,7 @@ All default_name of resources **can be modified** and also must be **unique**.
 | Azure Storage account | storageacc   | used as destination container to store blob files |
 
 ## Get the Topic Endpoint & Access key
-Event Grid topic endpoint and Access key needs to integrate and copy value from:
+Once the deployment is done, Event Grid topic endpoint and Access key needs to integrate and get copy value from:
 #### Go to Event Grid topic (customertopic) -> Overview -> Topic Endpoint
 <img width="875" alt="image" src="https://user-images.githubusercontent.com/126143091/224275190-13777a90-d852-4b6c-b0d6-0fabdc32eca6.png">
 
