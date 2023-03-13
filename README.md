@@ -4,10 +4,10 @@ Click me
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Femtecinc%2Fdeploy-to-azure-demo%2Fmain%2Fazuredeploy.json)
 
 ## Overview
-This sample deploys an Azure Functions app with an Event Grid trigger to act as a webhook. 
+This sample deploys an Azure Functions app with an Event Grid trigger to act as a webhook within the vnet-subnet integration. 
 
 ## Resources
-This template creates,
+All default_name of resources **can be modified** and also must be **unique**. 
 
 | resources | default_name | Comment |
 | :----- | :--- | :--- |
@@ -15,10 +15,8 @@ This template creates,
 | Function App plan | funappplan |   |
 | Virtual network (Subnet) | vnet-test (function) | Subnet Name i.e function is fix  |
 | Azure Functions app (function) | test-functionapp (CopyBlobFile) | function name i.e CopyBlobFile is fix  |
-| Azure Storage account  | storageaccfun | decatedly used for store function data |
+| Azure Storage account  | storageaccfun | dedicatedly used for store function data |
 | Azure Storage account | storageacc   | used as destination container to store blob files |
-
-above all default_name of resources **can be modified** and also must be **unique**. 
 
 ## Get the Topic Endpoint & Access key
 Event Grid topic endpoint and Access key needs to integrate and copy value from:
