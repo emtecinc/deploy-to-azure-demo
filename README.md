@@ -1,9 +1,18 @@
-# deploy-to-azure-demo
+# Data subcription deployment
+
+There are two ways for deployment:
+### 1. ARM template
 
 **Click me** (use CTRL+Click for new tab)
 
-
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Femtecinc%2Fdeploy-to-azure-demo%2Fmain%2Fazuredeploy.json)
+
+
+### 2. Powershell script
+
+To download the script, find the file with name "bloomberg-infra.ps1" in same repo. 
+
+Run this script in powershell. (**note-** please make sure script file and zipdeploy_content.zip file should present in same folder.)
 
 ## Overview
 This sample deploys an Azure Functions app with an Event Grid trigger to act as a webhook within the vnet-subnet integration. 
@@ -20,10 +29,3 @@ All default_name of resources **can be modified** and also must be **unique**.
 | Azure Storage account  | storageaccfun | dedicatedly used for function related data |
 | Azure Storage account | storageacc   | used as destination container to store blob files |
 
-## Get the Topic Endpoint & Access key
-Once the deployment is done, Event Grid topic endpoint and Access key needs to integrate and get copy value from:
-#### Go to Event Grid topic (customertopic) -> Overview -> Topic Endpoint
-<img width="875" alt="image" src="https://user-images.githubusercontent.com/126143091/224275190-13777a90-d852-4b6c-b0d6-0fabdc32eca6.png">
-
-#### Go to Event Grid topic (customertopic) -> Settings -> Access Key -> Key1/Key2
-<img width="956" alt="image" src="https://user-images.githubusercontent.com/126143091/224274360-064e147d-9917-4373-abd1-e161a0b33215.png">
