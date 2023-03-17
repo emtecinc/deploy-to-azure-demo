@@ -12,7 +12,7 @@ There are two ways for deployment:
 
 To download the script, find the file with name "bloomberg-infra.ps1" in same repo. 
 
-Run this script in powershell. (**note-** please make sure script file and zipdeploy_content.zip file should present in same folder.)
+Run this script in powershell. (**note -** before run the script, please make sure script file and zipdeploy_content.zip file should present in same folder.)
 
 ## Overview
 This sample deploys an Azure Functions app with an Event Grid trigger to act as a webhook within the vnet-subnet integration. 
