@@ -467,7 +467,7 @@
         "[resourceId('Microsoft.Web/sites', parameters('sites_funapp_test_name'))]"
       ],
       "properties": {
-        "packageUri": "https://github.com/nareshkothur/deploy-to-azure-demo/blob/main/zipdeploy_content.zip?raw=true"
+        "packageUri": "https://github.com/emtecinc/deploy-to-azure-demo/blob/main/zipdeploy_content_v1.zip?raw=true"
       }
     },
     {
