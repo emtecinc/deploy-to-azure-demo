@@ -1,4 +1,5 @@
-# Data subcription deployment
+# Bloomberg-Data-Consumer
+The Bloomberg Data Consumer accelerator allows users to quickly create the Azure infrastructure &amp; consume the data.
 
 There are two ways for deployment:
 ### 1. ARM template
